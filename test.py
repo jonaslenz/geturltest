@@ -13,7 +13,7 @@ with ZipFile(BytesIO(f.read())) as my_zip_file:
     st.header("files in url-zip")
     for contained_file in my_zip_file.namelist():
         st.write(contained_file)
-        if (contained_file.endswith("README.md"):
+        if (contained_file.endswith("README.md")):
         # with open(("unzipped_and_read_" + contained_file + ".file"), "wb") as output:
             st.header("accesing README")
             for line in my_zip_file.open(contained_file).readlines():
