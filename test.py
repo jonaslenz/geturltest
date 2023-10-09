@@ -17,7 +17,7 @@ with ZipFile(BytesIO(f.read())) as my_zip_file:
         # with open(("unzipped_and_read_" + contained_file + ".file"), "wb") as output:
     st.write("accesing README")
     try:
-        for line in my_zip_file.open(README.md).readlines():
+        for line in my_zip_file.open("README.md").readlines():
             st.write(line)
     except:
         st.write("no README")
