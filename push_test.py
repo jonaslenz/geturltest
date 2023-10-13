@@ -4,9 +4,9 @@ from github import Auth
 
 st.title("Test push to github repo")
 
-filename = st.text_input(filename)
-filecontent = st.text_area(content)
-message = st.text_input(commit message)
+filename = st.text_input("filename")
+filecontent = st.text_area("content")
+message = st.text_input("commit message")
 
 if st.button('Commit'):
   auth = Auth.Token(st.secrets["github_push"])
