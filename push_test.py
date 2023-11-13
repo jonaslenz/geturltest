@@ -5,7 +5,7 @@ from github import Auth
 
 st.title("Test push to github repo")
 
-filename = st.text_input("filename")
+filename = st.text_input("Filename")
 filename = re.sub('[^A-Za-z0-9]+', '', filename)
 filecontent = st.text_area("content")
 message = st.text_input("commit message")
